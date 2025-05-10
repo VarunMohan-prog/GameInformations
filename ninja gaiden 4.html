@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Fire</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+
+  .slides {
+    display: flex;
+    width: calc(300px * 3);
+    animation: scrollSlider 12s linear infinite;
+  }
+
+  .slides img {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+
+  @keyframes scrollSlider {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-310px); }
+    66% { transform: translateX(-620px); }
+    100% { transform: translateX(0); }
+  }
+</style>
+</head>
+<body class="bg-black text-white font-sans">
+  <section class="slider">
+  <div class="slides">
+    <img src="https://i.postimg.cc/rwDgk2Bb/ng4-ss-02.jpg" alt="Free Fire 1">
+    <img src="https://i.postimg.cc/SK0Lb272/ss-7ac7675da6a80f66c9fe88709f277eddc5cf9caa-1920x1080.jpg" alt="Free Fire 2">
+    <img src="https://i.postimg.cc/7hL0ngDc/02-HILi1ipzl-VQez-EYBDWzuj-6-fit-lim-size-1600x900-v1569490295.jpg" alt="Free Fire 3">
+  </div>
+</section>
+<div class="max-w-4xl mx-auto px-4 my-8">
+  <h2 class="text-2xl font-bold mb-4">Free Fire Intro Video</h2>
+  <div class="aspect-w-16 aspect-h-9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/R4mcnuUWzPQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="star-rating">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+<p id="ratingValue">Rating: 5.0</p>
+    <img src="https://i.postimg.cc/d15T3Ld9/header.jpg" alt="Game" class="w-full rounded-xl mb-4">
+    <p class="text-gray-300 mb-4">
+     Ninja Gaiden 4 is an upcoming action-adventure game co-developed by Team Ninja and PlatinumGames, and published by Xbox Game Studios. It is the seventh mainline game in Koei Tecmo's Ninja Gaiden series, and the direct sequel to Ninja Gaiden 3 (2012).
+
+    </p>
+    <a href="#" class="inline-block bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Download</a>
+    <a href="index.html" class="ml-4 text-blue-400 hover:underline">Back to Home</a>
+  </div>
+</body>
+</html>
